@@ -222,7 +222,7 @@ footer { padding-block: 32px 40px; border-top: 1px solid var(--line); color: var
     <section class="hero">
       <div>
         <h1>Full-stack developer who builds web apps that work, and AI systems that ship.</h1>
-        <p class="lead">I build React and Node.js applications end to end, from the database schema to the interface. I recently completed SE Factory's Applied AI Engineering Workshop, where I built a working AI agent with LLM APIs, retrieval, tool calls, and evaluations.</p>
+        <p class="lead">I build React and Node.js applications end to end, from the database schema to the interface. I recently completed SE Factory's Applied AI Engineering Workshop, and applied tool calling and evaluations to a personal finance assistant.</p>
         <div class="cta">
           <a class="btn btn-primary" href="#work">See my work</a>
           <a class="btn btn-ghost" href="#contact">Get in touch</a>
@@ -278,6 +278,7 @@ footer { padding-block: 32px 40px; border-top: 1px solid var(--line); color: var
         <p class="shot-cap" id="shot-cap">Dashboard: balance, income, expenses and savings at a glance, with live charts and budget progress. Screenshots use sample data.</p>
       </div>
 
+      <figure id="finance-demo" style="margin:1.5rem 0"><figcaption>Personal Finance Manager · dashboard, budgets, and expenses · 51 seconds</figcaption><video controls playsinline preload="metadata" aria-label="Personal Finance Manager · dashboard, budgets, and expenses · 51 seconds" style="display:block;width:100%;max-width:900px;margin-top:.5rem" src="demos/personal-finance-demo.mp4#t=0.1"></video><a href="demos/personal-finance-demo.mp4">Open video</a></figure>
       <div class="flow" aria-label="Architecture">
         <div class="node"><b>React 18 + TypeScript</b><span>Single-page app with Tailwind CSS, Recharts, React Router and Axios</span></div>
         <div class="link">REST<br>JWT</div>
@@ -330,33 +331,8 @@ footer { padding-block: 32px 40px; border-top: 1px solid var(--line); color: var
     <h2>Where I have worked</h2>
 
     <div class="roles">
-      <article class="role">
-        <div class="when">Dec 2025 – Jun 2026<br>Remote</div>
-        <div>
-          <h3>Full Stack Developer</h3>
-          <p class="org">Tawasoul</p>
-          <ul>
-            <li>Built and maintained full-stack web applications with React and Node.js/Express, covering both interfaces and backend services.</li>
-            <li>Created a real-time interview timer for an AI-powered interview platform that tracks session length between the AI agent and the client.</li>
-            <li>Integrated REST APIs and managed databases for secure, maintainable, scalable features.</li>
-            <li>Worked with the team on large tasks, troubleshooting issues and improving application performance, using Git, testing, and written documentation.</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="role">
-        <div class="when">Feb 2025 – May 2025<br>Remote, part-time</div>
-        <div>
-          <h3>Full Stack Web Development Intern</h3>
-          <p class="org">Hurdle Solutions</p>
-          <ul>
-            <li>Built front-end data-entry components, including forms and product listing interfaces.</li>
-            <li>Used Docker to set up reproducible local development environments.</li>
-            <li>Worked through GitHub in a multi-developer codebase, contributing to shared projects.</li>
-            <li>Connected front-end and back-end components so data stayed consistent across the application.</li>
-          </ul>
-        </div>
-      </article>
+      <article class="role"><div class="when">2025–26 academic year<br>Three months</div><div><h3>Full-Stack Web Development Intern</h3><p class="org">Tawasoul</p><ul><li>Built Astro pages for the professional networking platform, including a view for closed job offers.</li><li>Worked on email verification, Google and LinkedIn sign-in, password recovery, and a contact form backed by Supabase.</li><li>Researched and designed time-limited access for AI interviews.</li></ul><figure id="tawasoul-demo" style="margin:1.5rem 0"><figcaption>Password recovery on Tawasoul · 11 seconds</figcaption><video controls playsinline preload="metadata" aria-label="Password recovery on Tawasoul · 11 seconds" style="display:block;width:100%;max-width:320px;margin-top:.5rem" src="demos/tawasoul-password-reset.mp4#t=0.1"></video><a href="demos/tawasoul-password-reset.mp4">Open video</a></figure></div></article>
+<article class="role"><div class="when">2024–25 academic year<br>12 weeks</div><div><h3>Full-Stack Web Development Intern</h3><p class="org">Hurdle Solutions</p><ul><li>Developed React and Supabase features for SleekSyncPOS, a point-of-sale system for a tuxedo rental business.</li><li>Built reusable tables with filtering, sorting, and pagination. Added row duplication to inventory and employee screens.</li><li>Simplified the invoice interface while preserving search and filters. Added tools for bulk processing and managing inventory images.</li></ul></div></article>
     </div>
   </div>
 </section>
@@ -374,7 +350,7 @@ footer { padding-block: 32px 40px; border-top: 1px solid var(--line); color: var
       <div class="ai-card"><h3>Evals and guardrails</h3><p>Evaluations with RAGAS and DeepEval, plus guardrails and approval gates that test behavior and keep a person in control of risky actions.</p></div>
       <div class="ai-card"><h3>Monitoring</h3><p>Tracing with LangSmith and tracking latency, token usage, errors, and cost, so a system can be run and improved after launch.</p></div>
     </div>
-    <p class="ai-note">This builds on my work at Tawasoul, where I shipped features for an AI-powered interview platform. I can build the web application around a model and the AI layer inside it.</p>
+    <p class="ai-note">In my <a href="https://github.com/jawad-nou/personal-finance-ai-assistant">Personal Finance Manager</a>, the assistant reads the signed-in user’s records through fixed tools. It can explain monthly spending and draft a budget change for the user to approve.</p>
 
     <div class="repos">
       <h3>Workshop material I worked through</h3>
